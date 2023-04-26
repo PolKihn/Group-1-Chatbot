@@ -15,6 +15,10 @@ binfoInfoBot = ChatBot('Bot')
 trainer = ChatterBotCorpusTrainer(binfoInfoBot)
 trainer.train("chatterbot.corpus.english")
 
+# Generate a response from the chatbot
+def answer(query):
+     return f"{binfoInfoBot.get_response(query)}"
+
 # Define user interaction
 def handleClient(clientSocket, clientAddress):
     print(f"{clientAddress} connected.")
@@ -26,8 +30,7 @@ def handleClient(clientSocket, clientAddress):
             clientSocket.close()
             break
 
-        botOutput = binfoInfoBot.get_response(userInput)
-        response = f"{botOutput}"
+        response = answer(userInput)
         clientSocket.send(response.encode())
 
 # Start server
