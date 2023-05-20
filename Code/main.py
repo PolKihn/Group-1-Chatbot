@@ -1,6 +1,9 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
+from chatterbot.trainers import ListTrainer
 
+import sys
+import os
 import socket
 import threading
 
@@ -8,12 +11,27 @@ import threading
 HOST = "127.0.0.1"    # Default loopback adress
 PORT = 10815
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+serverSocket.settimeout(1.0)
 serverSocket.bind((HOST, PORT))
 
 # Create a new chat bot and train it
-binfoInfoBot = ChatBot('Bot')
-trainer = ChatterBotCorpusTrainer(binfoInfoBot)
-trainer.train("chatterbot.corpus.english")
+binfoInfoBot = ChatBot(
+    "Bot",
+    logic_adapters=[
+        "chatterbot.logic.MathematicalEvaluation",
+        {
+            "import_path": "chatterbot.logic.BestMatch",
+            "default_response": "I am sorry, but I do not understand.",
+            "maximum_similarity_threshold": 0.10
+        }
+        ]
+    )
+
+languageTrainer = ChatterBotCorpusTrainer(binfoInfoBot)
+languageTrainer.train("chatterbot.corpus.english")
+uniData = open(os.path.join(os.path.dirname(__file__),"..","Binfo Source File","UniLu.txt"), "r").readlines()
+uniTrainer = ListTrainer(binfoInfoBot)
+uniTrainer.train(uniData)
 
 # Generate a response from the chatbot
 def answer(query):
@@ -21,6 +39,7 @@ def answer(query):
 
 # Define user interaction
 def handleClient(clientSocket, clientAddress):
+    connectionAccepted.set()
     print(f"{clientAddress} connected.")
     while True:
         userInput = clientSocket.recv(1024).decode()
@@ -35,8 +54,15 @@ def handleClient(clientSocket, clientAddress):
 
 # Start server
 serverSocket.listen()
+connectionAccepted = threading.Event()
 print("BINFO Info Bot ready. Awaiting connections.")
 while True:
+    try:
         clientSocket, clientAddress = serverSocket.accept()
-        clientThread = threading.Thread(target=handleClient, args=(clientSocket, clientAddress))
+        clientThread = threading.Thread(target=handleClient, args=(clientSocket, clientAddress), daemon=True)
         clientThread.start()
+    except  socket.timeout: {}    
+    except KeyboardInterrupt:
+        sys.exit()
+
+# py ./code/client.py
