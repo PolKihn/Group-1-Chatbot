@@ -1,13 +1,15 @@
 import socket
+import colorama
+from colorama import Fore, Style
 
 SERVER = "127.0.0.1"
 PORT = 10815 
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((SERVER, PORT))
-print("Is there anything you would like to know about BINFO? (Type EXIT to close)")
+print(Fore.RED+Style.BRIGHT+"Is there anything you would like to know about BINFO? (Type EXIT to close)")
 while True:
-    userInput = input("Question: ")
+    userInput = input(Fore.BLUE+"Question: ")
 
     if userInput == "EXIT":
         s.close()
@@ -15,4 +17,4 @@ while True:
 
     s.sendall(userInput.encode())
     response = s.recv(1024).decode()
-    print(f"BINFO Info Bot: {response}")
+    print(Fore.GREEN+f"BINFO Info Bot: {response}")
