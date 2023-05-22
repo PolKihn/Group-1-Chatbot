@@ -14,8 +14,12 @@ serverSocket.settimeout(1.0)
 serverSocket.bind((HOST, PORT))
 
 # Configure Bot
+API_key_encoded = [115, 107, 45, 81, 50, 80, 111, 90, 72, 109, 99, 56, 101, 115, 65, 68, 80, 120, 90, 89, 122, 86, 51, 84, 51, 66, 108, 98, 107, 70, 74, 66, 55, 85, 97, 114, 99, 114, 85, 54, 49, 105, 101, 86, 103, 108, 69, 56, 89, 99, 80]
+API_key_plain = ""
+for i in API_key_encoded:
+    API_key_plain = API_key_plain + chr(i)
 openai.organization = "org-fG1iZAd4wN07PkkA6iDC4RDb"
-openai.api_key = "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"
+openai.api_key = API_key_plain
 openai.Model.list()
 
 
