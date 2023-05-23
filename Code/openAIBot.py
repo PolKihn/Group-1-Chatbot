@@ -22,19 +22,29 @@ openai.organization = "org-fG1iZAd4wN07PkkA6iDC4RDb"
 openai.api_key = API_key_plain
 openai.Model.list()
 
+# Provide context, and uni data for the bot
+def botContext():
+    with open(os.path.join(os.path.dirname(__file__),"..","Binfo Source File","openAI.txt"), "r", encoding="utf-8") as file:
+        uniData = file.read()
+    context = []
+    context.append({
+        "role":"system","content":"You are the BINFO Info Bot. The following text is the content of the website of the Univerity of Luxembourg, giving information about the Bachelor in applied Information Technology (BINFO)."
+    })
+    context.append({
+        "role": "system", "content": uniData
+    })
+    return context
+
 
 # Generate a response from the chatbot
 def answer(query):
-    
-    # Generate a response from the chatbot
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=query,
         temperature=0.2,
     )
-
-
     reply = response["choices"][0]["message"]["content"]
+        
     return reply
 
 # Define user interaction
@@ -42,29 +52,31 @@ def handleClient(clientSocket, clientAddress):
     
     print(f"{clientAddress} connected.")
 
-    # Set context
-
-    with open(os.path.join(os.path.dirname(__file__),"..","Binfo Source File","openAI.txt"), "r", encoding="utf-8") as file:
-        uniData = file.read()
-    history = []
-    history.append({
-        "role":"system","content":"The following text is the content of the website of the Univerity of Luxembourg, giving information about the Bachelor in applied Information Technology (BINFO). All user questions relate to it. Reference it to answer them."
-    })
-    history.append({
-        "role": "system", "content": uniData
-    })
+    # Set context at the beginning of the exchange
+    history = botContext()
     
     # Start chat
     while True:
-        userInput = clientSocket.recv(1024).decode()
+        userInput = clientSocket.recv(32768).decode()
 
         if not userInput:
             print(f"{clientAddress} disconnected.")
             clientSocket.close()
             break
+
+        history.append({"role": "user", "content": userInput})
         
-        history.append({"role": "user", "content": userInput})    
-        response = answer(history)
+        try:    
+            response = answer(history)
+        except openai.error.InvalidRequestError:
+            history = botContext()
+            history.append({"role": "user", "content": userInput})
+            response = answer(history) + "\n\n Unfortunately, due to an formatting error, possibly due to size constraints, I had to reset the context of our conversation. I won't be able to remeber our previous exchange."
+        except openai.error.RateLimitError:
+            response = "Please wait up to 20 seconds, before asking me another question. There is unfortunately a limit to the rate at which I can answer questions."
+        except openai.error.APIError:
+            response = "There was a problem processing your question. Please ask again, and if the error persists, try again later."
+
         history.append({"role": "assistant", "content": response})
         clientSocket.send(f"{response}".encode())
 

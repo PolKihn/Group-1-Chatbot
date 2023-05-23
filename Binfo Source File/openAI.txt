@@ -1,8 +1,6 @@
-BINFO
 Degree: Bachelor in Applied Information Technology
 Duration: 3 year full-time programme / 6 semesters (180 ECTS), with 1 mobility semester at a foreign institution and 1 internship.
 Languages: English (80%), French (20%) 
-
 Enrollment fees: 
 400€ / semester (1 & 2)
 200€ / semester (3 to 6)
@@ -10,38 +8,40 @@ ADMISSION REQUIREMENTS :
 Luxembourgish secondary school diploma or foreign diploma recognised as equivalent by the Luxembourg Ministry of Education
 Languages: level B2 in English and B1 in French
 Selection based on grades especially in mathematics, informatics, and other natural science or technical subjects
+Candidates with excellent mathematical background, but non-sufficient language skills, are nevertheless invited to apply, since specific language courses are offered in the Language Center of the University to help beginner students to improve their language skills.
+
+Recognition of prior experience and/or entry into a higher semester of a Bachelor programme:
+In order to avoid duplication of individual study effort and to acknowledge previous academic or professional experience, candidates applying to a bachelor of the University of Luxembourg can receive recognition for prior experience of relevance to their programme. As a result, a successful applicant can be exempted from study requirements and thereby, reduce the maximum duration available for the completion of studies. 
+The following experiences qualify for recognition: 
+Credits (ECTS or other) acquired during previous studies, and/or 
+Professional experience with a duration of at least 3 years full-time equivalent years (in a field of relevance to the programme). 
+Recognition of prior experience by the University without continuing studies at the University of Luxembourg is not possible because to obtain a degree from the University, a student must have obtained at least 60 ECTS credits by completing the courses followed and offered by the University.
+
 STUDY AND CAREER OPPORTUNITIES
 Network administrator, IT developer, software engineer, webmaster in all business sectors
 Study in the Master in Information and Computer Sciences (MICS) at the University of Luxembourg
-APPLICATION
-EU students: February - August
-Non-EU students: February - April
 
-Admission to the BINFO programme is possible for every candidate with a university entrance degree, sufficient language background (level B1 in French and B2 in English), and motivation for learning about mathematics and computer science. Candidates with excellent mathematical background, but non-sufficient language skills, are nevertheless invited to apply, since specific language courses are offered in the Language Center of the University to help beginner students to improve their language skills.
+APPLICATION
+EU students: 
+Online application: from Wednesday, 01 February 2023 to Friday, 25 August 2023
+Deadline to submit application: Friday, 01 September 2023
+Deadline for payment: Friday, 08 September 2023
+Non-EU students: February - April
 
 Mobility Semester 
 The aforementioned law on the university defines in Art 36 (6) that for Bachelor students a mobility semester in a foreign country is mandatory (with only few exceptions for students in special situations). The mobility semester for BINFO students can be chosen as either Semester 3 or Semester 4. For a student doing his/her mobility, the respective regular semester programme is replaced by a list of courses given at the host institution, defined together by the student and the study director before the start of the mobility semester. Technical details are available on a dedicated page on our Moodle platform.
 Exemption from the semester abroad
-
 In the following cases, the Dean grants an exemption from the mobility requirement after consultation with the Director of Studies:
-
 in the case of students with an illness that requires special treatment and/or students with a disability that significantly limits their mobility;
-
 in the case of family commitments which prevent the student from being away from the family for an extended period of time (Rectorate decision of 8 May 2006);
-
 in the case of students from a third country outside the European Economic Area who can provide evidence of a university degree in a country that does not belong to the European Economic Area (Rectorate decision of 10 July 2007);
-
 in the case of proof of employment for the study period of at least 20 hours per week.
-
 Students who are exempt from the mobility requirement are:
 those who can present a degree in which at least 4 semesters of the study period were spent abroad;
-
-
 those who have obtained at least 25 ECTS credits at a foreign university, which must be recognised by the Director of Studies (these ECTS credits count for one semester).
 
-
 Contact Information 
-A-Prof. Volker Müller  (Study Director ) 
+Prof. Dr. Volker MÜLLER (Study Director ), Associate professor in Computer science, specialized in Computational Number Theory
 Maison du Nombre, E03 0335-080, Belval 
 Phone: (+352) 46 66 44 6751
 Email: volker.muller@uni.lu 
@@ -53,105 +53,90 @@ Email: sandra.rosin@uni.lu
 
 Programme Academic Year 2022-2023
 Version: 1.12.2022
+Each semester is organised in modules with diffrent classes, in which the grades between classes can either be compensated with one another or not, as specified, passing classes with failing grades, if the average module grade is high enough. 
+It also gives an ovweview of the total of ECTS worth of all the classes in the module.
+Each module below contains a list of classes, with the language of instruction and the ECTS awarded for passing the class.
 
-First Semester Programme 					Total ECTS: 30
+First Semester Programme 									            Total ECTS: 30
+Module 1.1 (No module compensation)								        ECTS: 7
+•	Introduction à l’informatique  			 (French and English)	 ECTS: 4
+•	Technical English 1 					    (English) 			    ECTS: 3
+Module 1.2 (Allows compensation)								        ECTS: 11
+•	Calculus 							        (French and English)	ECTS: 4
+•	Mathématiques discrètes 1 				  (French)			      ECTS: 4
+•	Statistiques 						        (French and English)	ECTS: 3
+Module 1.3 (No module compensation)								        ECTS: 12
+•	Operating Systems 1					        (English)			    ECTS: 4
+•	Programming 1 						        (English)			    ECTS: 8
 
-Module 1.1 (No module compensation)						ECTS: 7
-Class: Introduction à l’informatique  		(French and English)		ECTS: 4
-Class: Technical English 1 				(English) 			ECTS: 3
-
-Module 1.2 (Allows compensation)						ECTS: 11
-Class: Calculus 					(French and English)		ECTS: 4
-Class: Mathématiques discrètes 1 			(French)			ECTS: 4
-Class: Statistiques 					(French and English)		ECTS: 3
-
-Module 1.3 (No module compensation)						ECTS: 12
-Class: Operating Systems 1				(English)			ECTS: 4
-Class: Programming 1 				(English)			ECTS: 8
-
-Second Semester Programme 				Total ECTS: 30
-
-Module 2.1 (No module compensation)						ECTS: 2
-Class: Technical English 2 				(English) 			ECTS: 2
-
-Module 2.2 (Allows compensation)						ECTS: 10
-Class: Linear Algebra				(English)			ECTS: 4
-Class: Mathématiques discrètes 2 			(English and French)		ECTS: 3
-Class: Probabilités 					(French)			ECTS: 3
-
-Module 2.3 (No module compensation)						ECTS: 10
-Class: Algorithms 1					(English)			ECTS: 4
-Class: Programming 2 				(English)			ECTS: 6
-
-Module 2.4 (No module compensation) 						ECTS: 8
-Class: Introduction to Graphics			 (English)			ECTS: 4
-Class: Introduction to Data Analysis with Python	 (English)			ECTS: 4
+Second Semester Programme 									            Total ECTS: 30
+Module 2.1 (No module compensation)								        ECTS: 2
+•	Technical English 2 					    (English) 			    ECTS: 2
+Module 2.2 (Allows compensation)								        ECTS: 10
+•	Linear Algebra						        (English)			    ECTS: 4
+•	Mathématiques discrètes 2 				  (English and French)    ECTS: 3
+•	Probabilités 						         (French)			     ECTS: 3
+Module 2.3 (No module compensation)								        ECTS: 10
+•	Algorithms 1						        (English)			    ECTS: 4
+•	Programming 2 						        (English)			    ECTS: 6
+Module 2.4 (No module compensation) 							        ECTS: 8
+•	Introduction to Graphics			 	    (English)			    ECTS: 4
+•	Introduction to Data Analysis with Python   (English)			    ECTS: 4
 
 Note :
 For the student to continue the program, at least 30 ECTS must be earned at the end of the first academic year. Otherwise, the student will be excluded from the program. 
 
-Third Semester Programme 					Total ECTS: 31
+Third Semester Programme 									            Total ECTS: 31
+Module 3.1 (No module compensation)								        ECTS: 9
+•	Web Development 1: Front-End				(English) 			    ECTS: 5
+•	Programming 3						        (English)			    ECTS: 4
+Module 3.2 (No module compensation)							        	ECTS: 8
+•	Algorithms 2 						        (English)			    ECTS: 4
+•	Operating Systems 2 					    (English)			    ECTS: 4
+Module 3.3 (No module compensation)								        ECTS: 6
+•	Modelling with UML 					        (English)			    ECTS: 3
+•	Software Engineering					    (English)			    ECTS: 3
+Module 3.4 (No module compensation) 							        ECTS: 8
+•	Database Management 1					    (English)			    ECTS: 4
+•	Networks 1					 		        (English)			    ECTS: 4
 
-Module 3.1 (No module compensation)						ECTS: 9
-Class: Web Development 1: Front-End		(English) 			ECTS: 5
-Class: Programming 3				(English)			ECTS: 4
+Fourth Semester Programme 									            Total ECTS: 30
+Module 4.1 (No module compensation)								        ECTS: 6
+•	Psychologie du travail en groupe 			(French) 			    ECTS: 3
+•	Droit pour informaticiens				    (French and English)	ECTS: 3
+Module 4.2 (No module compensation)								        ECTS: 8
+•	Networks 2							        (English)		    	ECTS: 3
+•	Software Engineering Project				(English)	    		ECTS: 5
+Module 4.3 (No module compensation)								        ECTS: 8
+•	Algorithms 3						        (English)		    	ECTS: 4
+•	Database Management 2					    (English)			    ECTS: 4
+Module 4.4 (No module compensation) 		        					ECTS: 8
+•	Interaction Design				        	(English)		    	ECTS: 4
+•	Software Testing			 		    	(English and French)	ECTS: 4
 
-Module 3.2 (No module compensation)						ECTS: 8
-Class: Algorithms 2 					(English)			ECTS: 4
-Class: Operating Systems 2 				(English)			ECTS: 4
-
-Module 3.3 (No module compensation)						ECTS: 6
-Class: Modelling with UML 				(English)			ECTS: 3
-Class: Software Engineering			(English)			ECTS: 3
-
-Module 3.4 (No module compensation) 						ECTS: 8
-Class: Database Management 1			 (English)			ECTS: 4
-Class: Networks 1					 (English)			ECTS: 4
-
-Fourth Semester Programme 				Total ECTS: 30
-
-Module 4.1 (No module compensation)						ECTS: 6
-Class: Psychologie du travail en groupe 	(French) 			ECTS: 3
-Class: Droit pour informaticiens	(French and English)		ECTS: 3
-
-Module 4.2 (No module compensation)						ECTS: 8
-Class: Networks 2					        (English)			ECTS: 3
-Class: Software Engineering Project		    (English)			ECTS: 5
-
-Module 4.3 (No module compensation)						ECTS: 8
-Class: Algorithms 3					        (English)			ECTS: 4
-Class: Database Management 2			    (English)			ECTS: 4
-
-Module 4.4 (No module compensation) 						ECTS: 8
-Class: Interaction Design			 	    (English)			ECTS: 4
-Class: Software Testing			 	   (English and French)		ECTS: 4
-
-Fifth Semester Programme 					Total ECTS: 30
-
-Module 5.1 (No module compensation)						ECTS: 10
-Class: Design Patterns			   	        (English)			ECTS: 4
-Class: Introduction à la vie professionnelle	(French)		ECTS: 2
-Class: Web Development 2: Back-End	   	    (English)			ECTS: 4
-
-Module 5.2 (No module compensation)						ECTS: 20
+Fifth Semester Programme 									            Total ECTS: 30
+Module 5.1 (No module compensation)								        ECTS: 10
+•	Design Patterns			   			        (English)	    		ECTS: 4
+•	Introduction à la vie professionnelle		 (French)	             ECTS: 2
+•	Web Development 2: Back-End			   	    (English)		    	ECTS: 4
+Module 5.2 (No module compensation)								        ECTS: 20
 Students must choose at least five courses out of all optional courses. 
-Class: Banking Information Technologies		(English)			ECTS: 4
-Class: Big Data					            (English)			ECTS: 4
-Class: Business Software Systems 			(English) 			ECTS: 4
-Class: Circuits numériques 				 (French) 			 ECTS: 4
-Class: Cloud-Based Applications 			(English) 			ECTS: 4
-Class: Introduction to IT Security 			(English) 			ECTS: 4
-Class: Java for Enterprise Applications 	(English) 			ECTS: 4
-Class: Parallel and Distributed Systems 	(English)			ECTS: 4
+•	Banking Information Technologies			(English)   			ECTS: 4
+•	Big Data							        (English)	    		ECTS: 4
+•	Business Software Systems 				    (English) 		    	ECTS: 4
+•	Circuits numériques                         (French) 			     ECTS: 4
+•	Cloud-Based Applications 				    (English) 			    ECTS: 4
+•	Introduction to IT Security 				(English) 			    ECTS: 4
+•	Java for Enterprise Applications	 		(English) 			    ECTS: 4
+•	Parallel and Distributed Systems 			(English)			    ECTS: 4
 
-
-Sixth Semester Programme 					Total ECTS: 30
-Module 6.1 (No module compensation)						ECTS: 30
-Class: Bachelor Project			            (English) 				ECTS: 3
-Class: Bachelor Project Defense		        (English)				ECTS: 3
+Sixth Semester Programme 					                            Total ECTS: 30
+Module 6.1 (No module compensation)						                ECTS: 30
+•	Bachelor Project			                (English) 				ECTS: 3
+•	Bachelor Project Defense		            (English)				ECTS: 3
 
 
 The Bachelor project realizes an at least 12 weeks long, full time, individual project in the IT domain either done in a professional partner institution (for more professionally interested students) or within a research group of the CS department (for more research-oriented students).
 Students are integrated in a team in the partner institution / research group and shall apply the IT knowledge achieved during their study in a practically relevant (sub)-project in this institution. A Bachelor thesis with a project description, achieved results and practical work experiences made must be written at the end of the project and defended in front of a jury. 
 
-One of the qualifications required to undertake the bachelor project, is that the student must have successfully completed all modules of the first two semesters of the program (in case, successful completion of only a single course of the first two semesters is missing, the Study Director can grant an exemption in case the student participates in the exam for this course during the last exam session before the expected start of the Bachelor project).
+One of the qualifications required to undertake the bachelor project, is that the student must have successfully completed all modules of the first two semesters of the program (in case, successful completion of only a single course of the first two semesters is missing, the Study Director can grant an exemption in case the student participates in the exam for this course during the last exam session before the expected start of the Bachelor project). 

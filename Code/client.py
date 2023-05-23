@@ -51,7 +51,7 @@ while True:
 
     # Send and receive message
     s.sendall(userInput.encode())
-    response = s.recv(1024).decode()
+    response = s.recv(32768).decode()
     response =f"BINFO Info Bot: \n{response}"
     
     response = wrap(response, 80)
