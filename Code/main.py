@@ -1,3 +1,15 @@
+# Depreciated. Left in for demonstration purposes.
+# Dependent on:  
+#       A modified version of ChatterBot
+#       The standard Chatterbot corpus
+#       Spacy
+#       An older version of Python 3 (max 3.6.0)
+# It technically works, but meets few non-fuctional requirements. 
+# The most important one, accuracy, will never be reached, due to poor documentation of database integration and search.
+# In order to train on Uni.lu data, it would need to be fed conversational examples. 
+# As a proof of concept, such a training file is provided, but it is too limited to be useful.
+# To expand this file, to reach our accuracy target is not feasable.
+
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.trainers import ListTrainer
