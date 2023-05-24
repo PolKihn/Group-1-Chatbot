@@ -43,7 +43,9 @@ print(Fore.RED+Style.BRIGHT+"Is there anything you would like to know about BINF
 while True:
     
     # Get input
-    userInput = input(Fore.BLUE+"Question: ")
+    userInput = ""
+    while userInput == "":
+        userInput = input(Fore.BLUE+"Question: ")
 
     if userInput.lower() == "exit":
         s.close()
