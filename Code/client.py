@@ -39,7 +39,8 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((SERVER, PORT))
 
 # Chat window
-print(Fore.RED+Style.BRIGHT+"Is there anything you would like to know about BINFO? (Type EXIT to close)")
+prompt = "Is there anything you would like to know about BINFO? (Type EXIT to close)"
+print(Fore.RED+Style.BRIGHT+prompt)
 while True:
     
     # Get input
@@ -56,7 +57,7 @@ while True:
     response = s.recv(32768).decode()
     response =f"BINFO Info Bot: \n{response}"
     
-    response = wrap(response, 80)
+    response = wrap(response, len(prompt))
 
     # output response
     print(Fore.GREEN+response)
