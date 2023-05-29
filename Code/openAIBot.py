@@ -71,7 +71,7 @@ def handleClient(clientSocket, clientAddress):
         except openai.error.InvalidRequestError:
             history = botContext()
             history.append({"role": "user", "content": userInput})
-            response = answer(history) + "\n\n Unfortunately, due to an formatting error, possibly due to size constraints, I had to reset the context of our conversation. I won't be able to remeber our previous exchange."
+            response = answer(history) + "\n\n Unfortunately, due to an formatting error, possibly due to size constraints, I had to reset the context of our conversation. I won't be able to remember our previous exchange."
         except openai.error.RateLimitError:
             response = "Please wait up to 20 seconds, before asking me another question. There is unfortunately a limit to the rate at which I can answer questions."
         except openai.error.APIError:
@@ -90,6 +90,5 @@ while True:
         clientThread.start()
     except  socket.timeout: {}    
     except KeyboardInterrupt:
+        serverSocket.close()
         sys.exit()
-
-# py ./code/client.py
